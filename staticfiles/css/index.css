@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  .row{
+      margin: 0px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    
+  }
+  body{
+      background-color: turquoise;
+  }
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.header{
+    position: relative;
+    margin-left: 30px;
+    font-size: xx-large;
+    color: grey;
+    top:20%;
+}  
+.rev_container{
+    position: relative;
+    left: 26%;
+    bottom: 4%;
+    height: 340px;
+    background-color: #f1f1f1;;
+    border-radius: 10px;
+    padding: 0;
+}
+#button{
+    position: relative;
+    top: 40%;
+    left: 40%;
+    
+}
+.head{
+    width: 100%;
+    background-color:  #e1e1d0;
+    height: 13%;
+    margin: 0;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    border-bottom: 1px solid grey;
+}
+.tag{
+    float: left;
+    position: absolute;
+    top:13px;
+    margin-left: 20px; 
+    color: white;
+}
+.tags{
+    font-weight: normal;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: green;
+    margin-left: 10px;
+}
+.main{
+    width: 100%;
+    background-color:  #f1f1f1;
+    height: 100%;
+    margin: 0;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+.url{
+    color:blue;
+    font-weight: bold;
+    position: relative;
+    left:8%;
+    top: 10%;
+    font-size: larger;
+}
+.rate{
+    float:right;
+    position: absolute;
+    right:25px;
+    top: 80px;
+    font-size: larger;
+    color: red;
+}
+.name{
+    position: absolute;
+    top:240px;
+    left: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    right: 7%;
+}
+.authenticity{
+    position: absolute;
+    top: 240px;
+    left: 180px;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: lightskyblue;
+    padding: 2px;
+}
+.review{
+    position: absolute;
+    top:280px;
+    left:20px;
+    font-size: larger;
+    font-weight: normal;
+    right: 14%;
+}
+.arrow{
+    position: absolute;
+    top:160px;
+    right: 25px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.main,.head{
+    display: none;
+}
