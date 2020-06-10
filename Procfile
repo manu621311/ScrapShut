@@ -1,1 +1,1 @@
-web: gunicorn scrapshut_project.wsgi --log-file 
+web: gunicorn scrapshut_project.wsgi 
